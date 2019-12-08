@@ -6,8 +6,10 @@
 	<script type="text/javascript">
   function Привітатися() {   
 x=document.profilie.name.value;
-y=document.profilie.date.value;
-alert("Hello "+x+". \nToday is "+ y)
+y=document.profilie.pb.value;
+z=document.profilie.email.value;
+n=document.profilie.date.value;
+alert("Вітаємо "+x+" "+y+"/Ви зареєстровані на сайті Професії майбутнього з такими даними: ваша пошта-"+z+",дата народження-"+n);
 }
 </script>
 
@@ -35,6 +37,9 @@ alert("Hello "+x+". \nToday is "+ y)
 <p><input type="radio" name="b1">до 10000 грн
 <p><input type="radio" name="b1">10000-20000 грн
 <p><input type="radio" name="b1">від 20000 грн
+
+	<button>Надіслати</button>
+<input type="button" value="Привітатися" onclick="hello()">
   </fieldset>
 	  <p><input type="button" name="knpk" value="next">
 
